@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>authentik</Name>
+  <Repository>ghcr.io/goauthentik/server:2021.6.1-rc6</Repository>
+  <Registry/>
+  <Network>proxynet</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1623798873</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>proxynet</Mode>
+    <Publish>
+      <Port>
+        <HostPort>9144</HostPort>
+        <ContainerPort>9443</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data/>
+  <Environment>
+    <Variable>
+      <Value>redis</Value>
+      <Name>AUTHENTIK_REDIS__HOST</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>Password</Value>
+      <Name>AUTHENTIK_REDIS__PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>postgresql</Value>
+      <Name>AUTHENTIK_POSTGRESQL__HOST</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>authentik</Value>
+      <Name>AUTHENTIK_POSTGRESQL__USER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>authentik</Value>
+      <Name>AUTHENTIK_POSTGRESQL__NAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>Password</Value>
+      <Name>AUTHENTIK_POSTGRESQL__PASSWORD</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Host Key 1" Target="AUTHENTIK_REDIS__HOST" Default="" Mode="" Description="Container Variable: AUTHENTIK_REDIS__HOST" Type="Variable" Display="always" Required="false" Mask="false">redis</Config>
+  <Config Name="Host Key 2" Target="AUTHENTIK_REDIS__PASSWORD" Default="" Mode="" Description="Container Variable: AUTHENTIK_REDIS__PASSWORD" Type="Variable" Display="always" Required="false" Mask="false">Password</Config>
+  <Config Name="Host Key 3" Target="AUTHENTIK_POSTGRESQL__HOST" Default="" Mode="" Description="Container Variable: AUTHENTIK_POSTGRESQL__HOST" Type="Variable" Display="always" Required="false" Mask="false">postgresql</Config>
+  <Config Name="Host Key 4" Target="AUTHENTIK_POSTGRESQL__USER" Default="" Mode="" Description="Container Variable: AUTHENTIK_POSTGRESQL__USER" Type="Variable" Display="always" Required="false" Mask="false">authentik</Config>
+  <Config Name="Host Key 5" Target="AUTHENTIK_POSTGRESQL__NAME" Default="" Mode="" Description="Container Variable: AUTHENTIK_POSTGRESQL__NAME" Type="Variable" Display="always" Required="false" Mask="false">authentik</Config>
+  <Config Name="Host Key 6" Target="AUTHENTIK_POSTGRESQL__PASSWORD" Default="" Mode="" Description="Container Variable: AUTHENTIK_POSTGRESQL__PASSWORD" Type="Variable" Display="always" Required="false" Mask="false">Password</Config>
+  <Config Name="Host Port 1" Target="9443" Default="" Mode="tcp" Description="Container Port: 9443" Type="Port" Display="always" Required="false" Mask="false">9144</Config>
+</Container>
